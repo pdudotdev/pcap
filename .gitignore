@@ -1,0 +1,30 @@
+# PCAPs and data
+TODO/
+DONE/
+LOGS/
+RESULTS/
+!versions.json
+
+# Zeek & Suricata & MMdb outputs
+*.log
+*.json
+
+# Allow versions.json
+!/versions.json
+
+# GeoIP databases
+ansible/mmdb/
+*.mmdb
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+
+# Virtualenv
+venv/
+.env

@@ -1,0 +1,11 @@
+{
+  "zeek": {
+    "version": "8.0.3"
+  },
+  "suricata": {
+    "version": "8.0.2"
+  },
+  "ansible": {
+    "version": "2.19.5"
+  }
+}
