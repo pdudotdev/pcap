@@ -1,6 +1,6 @@
-# 🔍 Network Threat Hunting Project 🔍
+# 🕵 Network Threat Hunting Project 🕵
 
-## 🕵 **Overview**
+## 🎯 **Overview**
 Threat-hunting project for network traffic analysis, built around a **fully automated pipeline** using Ansible, Python, Zeek, and Suricata. This repository is associated with the **Build a Network Threat Hunting Project with Ansible & Python** course on Udemy.
 
 ## 🛠️ **Tech Stack**
