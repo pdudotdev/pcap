@@ -1,0 +1,35 @@
+- name: Set current PCAP for this iteration
+  set_fact:
+    current_pcap: "{{ pcap_item.path }}"
+
+- name: Run Zeek
+  include_role:
+    name: zeek_run
+
+- name: Run Suricata
+  include_role:
+    name: suricata_run
+
+- name: Enrich Suricata alerts with GeoIP / ASN
+  include_role:
+    name: python_asngeo
+
+- name: Correlate Suricata and Zeek data
+  include_role:
+    name: python_correlate
+
+- name: Generate alerts report
+  include_role:
+    name: python_report_alerts
+
+- name: Generate statistics report
+  include_role:
+    name: python_report_stats
+
+- name: Generate final consolidated report
+  include_role:
+    name: report_final
+
+- name: Cleanup phase, TODO -> DONE
+  include_role:
+    name: cleanup

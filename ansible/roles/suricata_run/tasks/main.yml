@@ -36,7 +36,7 @@
     suricata
     -r {{ current_pcap }}
     -l {{ playbook_dir }}/../LOGS/suricata/{{ pcap_name }}
-  become: true  
+  become: true
   register: suricata_run
   changed_when: true
 
