@@ -76,4 +76,4 @@
 
 - name: Show selected PCAP
   debug:
-    msg: "Selected PCAP for processing: {{ current_pcap }}"
+    msg: "Selected PCAP for processing: {{ current_pcap | basename }}"
